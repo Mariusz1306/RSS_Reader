@@ -21,10 +21,15 @@ public class MainActivity extends FragmentActivity {
                 test.run();
                 if (test.isDownloaded())
                     Text.setText(test.getFeed().getAuthor());
+                else {
+                    String text = "Failed to download " + ++fails + " times";
+                    Text.setText(text);
+                }
                 System.out.print("");
             }
         } catch (Exception e) {
-            Text.setText("Failed to download " + ++fails + " times");
+            String text = "Failed to download " + ++fails + " times";
+            Text.setText(text);
         }
     }
 
