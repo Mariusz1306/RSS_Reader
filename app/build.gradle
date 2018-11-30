@@ -28,4 +28,5 @@ dependencies {
     implementation 'com.android.support:support-annotations:27.1.1'
     implementation files('jdom-1.1.3.jar')
     implementation files('rome-1.0.jar')
+    implementation files('android-rome-feed-reader-1.0.0.jar')
 }
